@@ -1,9 +1,13 @@
 print("Hello World")
-list_2 = [87, 3, 8, 6, 15, 23, 2]
-n = len(list_2)
+jojo = open("number.txt", "r")
+number = jojo.readline()
+spisok = number.split()
+print(spisok)
+n = len(spisok)
 print(n)
 for p in range(0, n):
     for i in range (0, n-1):
-        if list_2[i] > list_2[i+1]:
-            list_2[i], list_2[i+1] = list_2[i+1], list_2[i]
-    print (list_2)
+        if spisok[i] > spisok[i+1]:
+            spisok[i], spisok[i+1] = spisok[i+1], spisok[i]
+    print (spisok)
+
